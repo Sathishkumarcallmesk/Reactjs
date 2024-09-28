@@ -37,22 +37,47 @@ const Portfolio = () => {
 
   return (
     <div className="px-4  max-w-screen-xl mx-auto" id="projects">
-      <div className="filters filter-button-group text-center mb-6">
-        <h4 className="text-gray-600 text-xl">
-          <ul className="flex  bg-black  justify-center space-x-4 p-5 mt-3">
-            <li className={`cursor-pointer ${filter === '*' ? 'text-blue-600' : ''}`} onClick={() => handleFilterChange('*')}>
+      <div className="filters   filter-button-group text-center mb-6">
+        <h4 className="text-gray-600 text-xl ">
+          <ul className="flex  justify-center mt-20 mb-20 bg-gray-500 p-4 mt-5 rounded-full shadow-lg space-x-6">
+            <li
+              className={`cursor-pointer px-4 py-2 rounded-lg font-semibold transition-all duration-300 ${filter === '*'
+                  ? 'bg-white text-black shadow-lg'
+                  : 'text-white hover:bg-white hover:text-black'
+                }`}
+              onClick={() => handleFilterChange('*')}
+            >
               All
             </li>
-            <li className={`cursor-pointer ${filter === '.webdesign' ? 'text-blue-600' : ''}`} onClick={() => handleFilterChange('.webdesign')}>
+            <li
+              className={`cursor-pointer px-4 py-2 rounded-lg font-semibold transition-all duration-300 ${filter === '.webdesign'
+                  ? 'bg-white text-black shadow-lg'
+                  : 'text-white hover:bg-white hover:text-black'
+                }`}
+              onClick={() => handleFilterChange('.webdesign')}
+            >
               Web Design
             </li>
-            <li className={`cursor-pointer ${filter === '.webdev' ? 'text-blue-600' : ''}`} onClick={() => handleFilterChange('.webdev')}>
+            <li
+              className={`cursor-pointer px-4 py-2 rounded-lg font-semibold transition-all duration-300 ${filter === '.webdev'
+                  ? 'bg-white text-black shadow-lg'
+                  : 'text-white hover:bg-white hover:text-black'
+                }`}
+              onClick={() => handleFilterChange('.webdev')}
+            >
               Web Development
             </li>
-            <li className={`cursor-pointer ${filter === '.brand' ? 'text-blue-600' : ''}`} onClick={() => handleFilterChange('.brand')}>
+            <li
+              className={`cursor-pointer px-4 py-2 rounded-lg font-semibold transition-all duration-300 ${filter === '.brand'
+                  ? 'bg-white text-black shadow-lg'
+                  : 'text-white hover:bg-white hover:text-black'
+                }`}
+              onClick={() => handleFilterChange('.brand')}
+            >
               Brand Identity
             </li>
           </ul>
+
         </h4>
       </div>
 
